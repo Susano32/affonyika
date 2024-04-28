@@ -1,0 +1,28 @@
+.button_sign_up {
+  width: $width-icon-button_sign_up;
+  height: $height-icon-button_sign_up;
+  background-color: $fill-bg-button_sign_up;
+  border-radius: 50px;
+  padding: 5px;
+  color: #fff;
+  transition: $transition-main;
+  font-size: 18px;
+
+  &_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-font-text;
+    height: 100%;
+    width: 100%;
+    border-radius: 50px;
+  }
+
+  &:hover {
+    background-color: $color-font-text;
+
+    .button_sign_up_text {
+      background-color: $fill-bg-button_sign_up;
+    }
+  }
+}

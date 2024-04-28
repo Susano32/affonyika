@@ -1,0 +1,22 @@
+.phone {
+  @include boxShadowMain;
+
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  place-items: center;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 15px 20px;
+  width: $width-icon-phone;
+
+  &__img {
+    position: relative;
+    height: $width-icon-phone-img-size;
+    width: $width-icon-phone-img-size;
+  }
+
+  &:hover {
+    @include boxShadowMainHover;
+  }
+}

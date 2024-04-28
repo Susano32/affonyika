@@ -1,0 +1,84 @@
+$fill-bg-caef: #f9caef;
+$fill-bg-afa: #feeafa;
+$fill-bg-fee: #fee7f9;
+$fill-bg-fbe: #f5b5e8;
+$fill-bg-button_sign_up: #b71d18;
+$fill-box-shadow-main: $fill-bg-fbe;
+$fill-box-shadow-main-hover: #fd5956;
+
+$color-font-black: #3f3f3f;
+$color-font-text: #e63d38;
+$color-font-text-about-us-desc: #949494;
+$color-font-text-about-us-list: #3f3f3f;
+
+$width-container: 1460px;
+$width-header-rigth-column: 240px;
+$width-header-rigth-column-l: 190px;
+$width-header-rigth-column-m: 160px;
+
+$width-icon-social: 19px;
+$width-icon-social-l: 17px;
+
+$height-icon-social: $width-icon-social;
+$height-icon-social-l: $width-icon-social-l;
+$height-sign-up-additionally-img: 150px;
+
+$z-index-modal-header-menu: 1000;
+$z-index-sign-up-photo: 200;
+$z-index-sign-up-button-sign-up: 300;
+$z-index-about_us-section: 300;
+$z-index-about_us-section-cloud: 400;
+$z-index-about_us-section-container: 500;
+
+$transition-main: all 0.2s ease-in-out;
+
+$font-size-modal-header-common: 23px;
+$font-size-modal-header-footer-xs: 15px;
+
+$padding-modal-header-footer: 10px;
+$padding-modal-header-footer-s: 8px;
+
+$paddingMargin-modal-header-xs: 100px;
+
+/** media-size */
+$media-xxxxxs: 390px;
+$media-xxxxs: 480px;
+$media-xxxs: 644px;
+$media-xxs: 720px;
+$media-xs: 844px; // mobile
+$media-s: 960px;
+$media-m: 1024px;
+$media-l: 1280px;
+$media-xl: 1440px;
+$media-xxl: 1600px;
+$media-xxxl: 1920px;
+/** media-size */
+
+/** icon-menu */
+$width-icon-phone: 11rem;
+$width-icon-phone-l: 9rem;
+$width-icon-phone-img-size: 1.4rem;
+$width-icon-phone-img-size-l: 1.1rem;
+$width-icon-phone-img-size-s: 2.5rem;
+/** icon-menu */
+
+/** icon-menu */
+$width-icon-menu_line_top: 30px;
+$width-icon-menu_line_medium: 36px;
+$width-icon-menu_line_bottom: 27px;
+$width-icon-menu: $width-icon-menu_line_medium;
+
+$height-icon-menu_line: 5px;
+$position-top-icon-menu_line: 7px;
+$height-icon-menu: calc(
+  ($height-icon-menu_line * 3) + ($position-top-icon-menu_line * 2)
+);
+/** icon-menu */
+
+/** media-size */
+$width-icon-button_sign_up: 410px;
+$width-icon-button_sign_up-m: 300px;
+
+$height-icon-button_sign_up: 70px;
+$height-icon-button_sign_up-m: 50px;
+/** media-size */

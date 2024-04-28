@@ -1,0 +1,60 @@
+html,
+body {
+  box-sizing: border-box;
+  min-height: 100%;
+  width: 100%;
+}
+
+body {
+  @include fontRoboto;
+  background-color: $fill-bg-caef;
+  background: linear-gradient(
+    153deg,
+    $fill-bg-caef 0%,
+    $fill-bg-fbe 2%,
+    $fill-bg-afa 36%,
+    $fill-bg-fee 67%,
+    $fill-bg-caef 91%
+  );
+  margin: 0;
+  color: $color-font-black;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+  color: $color-font-black;
+  transition: $transition-main;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  font-size: x-large;
+}
+
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+  transition: $transition-main;
+}
+
+.container {
+  max-width: $width-container;
+  margin: 0 auto;
+  height: 100%;
+  padding: 0 15px;
+}
+
+@import "./custom.media.scss";

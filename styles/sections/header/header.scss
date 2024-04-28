@@ -1,0 +1,94 @@
+.header {
+  height: 100px;
+  margin-top: 15px;
+  margin-bottom: 100px;
+
+  &_container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+
+  &__logo {
+    @include flexJustifyItemsCenter;
+
+    &_img {
+      width: 251px;
+      height: 92px;
+    }
+  }
+
+  &__content {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    font-size: 16px;
+  }
+
+  &__top_line {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+
+    &_infotime {
+      align-self: center;
+      font-size: 13px;
+      padding-left: 20px;
+    }
+
+    &_social_list {
+      @include flexJustifyItemsCenter;
+
+      &_item {
+        margin: 0 12px;
+
+        &_link {
+          &_img {
+            height: $height-icon-social;
+            width: $width-icon-social;
+          }
+        }
+      }
+    }
+  }
+
+  &__bottom_line {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+
+    &_nav {
+      font-weight: bold;
+      height: 100%;
+
+      &_list {
+        display: flex;
+        height: 100%;
+
+        &_item {
+          &_link {
+            @include flexJustifyItemsCenter;
+
+            height: 100%;
+            padding: 0 20px;
+
+            &:hover {
+              background-color: rgba(
+                64,
+                64,
+                64,
+                0.144
+              ); // TODO Добавить анимацию
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__mobile {
+    &_phone {
+      display: none;
+    }
+
+    &_icon_menu {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.button_main {
+  width: 216px;
+  height: 52px;
+  padding: 0.2rem 0.9rem;
+  border-radius: 4% 95% 6% 95% / 95% 4% 92% 5%;
+  border: 0.2rem dashed rgb(230, 61, 56);
+
+  color: rgb(230, 61, 56);
+  background: none;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  transition: all 0.2s linear;
+
+  &:hover {
+    border: 0.2rem solid rgb(230, 61, 56);
+    border-radius: 95% 4% 97% 5% / 4% 94% 3% 95%;
+    font-size: 19px;
+  }
+}

@@ -1,0 +1,24 @@
+@include media_L {
+  .phone {
+    font-size: 13px;
+    width: $width-icon-phone-l;
+
+    &__img {
+      height: $width-icon-phone-img-size-l;
+      width: $width-icon-phone-img-size-l;
+    }
+  }
+}
+
+@include media_XS {
+  .phone {
+    box-shadow: none;
+    justify-items: start;
+    padding-left: 0;
+    padding-bottom: 0;
+
+    &:hover {
+      box-shadow: none;
+    }
+  }
+}

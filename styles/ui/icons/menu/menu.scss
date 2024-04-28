@@ -1,0 +1,36 @@
+.icon_menu {
+  cursor: pointer;
+  width: $width-icon-menu;
+  height: $height-icon-menu;
+  position: relative;
+
+  &_line {
+    position: relative;
+    display: block;
+    width: $width-icon-menu_line_medium;
+    height: $height-icon-menu_line;
+    background-color: $color-font-black;
+    border-radius: 2px;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: $height-icon-menu_line;
+      background-color: $color-font-black;
+      border-radius: 2px;
+    }
+
+    &::before {
+      width: $width-icon-menu_line_top;
+      top: calc($height-icon-menu_line * (-2.1));
+    }
+
+    &::after {
+      width: $width-icon-menu_line_bottom;
+      top: calc($height-icon-menu_line * 2.1);
+    }
+  }
+}

@@ -1,0 +1,375 @@
+@include media_XL($media-xl + 66px) {
+  .about_us {
+    &__cloud_top,
+    &__cloud_buttom {
+    }
+
+    &__container_wrapper {
+    }
+
+    &__container {
+      grid-template-columns: 1.5fr 1fr;
+    }
+
+    &__photos {
+      transform: scale(0.85);
+    }
+
+    &__content {
+      &_title {
+      }
+
+      &_desc {
+      }
+
+      &_list {
+        &_item {
+        }
+      }
+    }
+  }
+}
+@include media_L {
+  .about_us {
+    &__cloud_top,
+    &__cloud_buttom {
+    }
+
+    &__container_wrapper {
+      padding: 0;
+    }
+
+    &__container {
+      grid-template-columns: 4fr 2.3fr 0.1fr;
+    }
+
+    &__photos {
+      &_item {
+        &_left {
+        }
+
+        &_medium {
+        }
+
+        &_right {
+        }
+
+        &_img {
+        }
+      }
+    }
+
+    &__content {
+      &_title {
+      }
+
+      &_desc {
+      }
+
+      &_list {
+        &_item {
+        }
+      }
+    }
+  }
+}
+
+@include media_M {
+  .about_us {
+    &__cloud_top,
+    &__cloud_buttom {
+    }
+
+    &__container_wrapper {
+    }
+
+    &__container {
+    }
+
+    &__photos {
+      &_item {
+        &_left {
+        }
+
+        &_medium {
+        }
+
+        &_right {
+        }
+
+        &_img {
+        }
+      }
+    }
+
+    &__content {
+      &_title {
+      }
+
+      &_desc {
+      }
+
+      &_list {
+        &_item {
+        }
+      }
+    }
+  }
+}
+
+@include media_XS {
+  .about_us {
+    &__cloud_top,
+    &__cloud_buttom {
+    }
+
+    &__container_wrapper {
+    }
+
+    &__container {
+    }
+
+    &__photos {
+      &_item {
+        &_left {
+        }
+
+        &_medium {
+        }
+
+        &_right {
+        }
+
+        &_img {
+        }
+      }
+    }
+
+    &__content {
+      &_title {
+      }
+
+      &_desc {
+      }
+
+      &_list {
+        &_item {
+        }
+      }
+    }
+  }
+}
+
+@include media_XXS {
+  .about_us {
+    &__cloud_top,
+    &__cloud_buttom {
+    }
+
+    &__container_wrapper {
+    }
+
+    &__container {
+    }
+
+    &__photos {
+      &_item {
+        &_left {
+        }
+
+        &_medium {
+        }
+
+        &_right {
+        }
+
+        &_img {
+        }
+      }
+    }
+
+    &__content {
+      &_title {
+      }
+
+      &_desc {
+      }
+
+      &_list {
+        &_item {
+        }
+      }
+    }
+  }
+}
+
+@include media_XXXS {
+  .about_us {
+    &__cloud_top,
+    &__cloud_buttom {
+    }
+
+    &__container_wrapper {
+    }
+
+    &__container {
+    }
+
+    &__photos {
+      &_item {
+        &_left {
+        }
+
+        &_medium {
+        }
+
+        &_right {
+        }
+
+        &_img {
+        }
+      }
+    }
+
+    &__content {
+      &_title {
+      }
+
+      &_desc {
+      }
+
+      &_list {
+        &_item {
+        }
+      }
+    }
+  }
+}
+@include media_XXXXS {
+  .about_us {
+    &__cloud_top,
+    &__cloud_buttom {
+    }
+
+    &__container_wrapper {
+    }
+
+    &__container {
+    }
+
+    &__photos {
+      &_item {
+        &_left {
+        }
+
+        &_medium {
+        }
+
+        &_right {
+        }
+
+        &_img {
+        }
+      }
+    }
+
+    &__content {
+      &_title {
+      }
+
+      &_desc {
+      }
+
+      &_list {
+        &_item {
+        }
+      }
+    }
+  }
+}
+
+@include media_XXXXS {
+  .about_us {
+    &__cloud_top,
+    &__cloud_buttom {
+    }
+
+    &__container_wrapper {
+    }
+
+    &__container {
+    }
+
+    &__photos {
+      &_item {
+        &_left {
+        }
+
+        &_medium {
+        }
+
+        &_right {
+        }
+
+        &_img {
+        }
+      }
+    }
+
+    &__content {
+      &_title {
+      }
+
+      &_desc {
+      }
+
+      &_list {
+        &_item {
+        }
+      }
+    }
+  }
+}
+
+@include media_XXXXXS {
+  .about_us {
+    &__cloud_top,
+    &__cloud_buttom {
+    }
+
+    &__container_wrapper {
+    }
+
+    &__container {
+    }
+
+    &__photos {
+      &_item {
+        &_left {
+        }
+
+        &_medium {
+        }
+
+        &_right {
+        }
+
+        &_img {
+        }
+      }
+    }
+
+    &__content {
+      &_title {
+      }
+
+      &_desc {
+      }
+
+      &_list {
+        &_item {
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@include media_M {
+  .container {
+    padding: 0 10px;
+  }
+}
+
+@include media_XS {
+
+  .container {
+    max-width: 100%;
+    padding: 0;
+  }
+}

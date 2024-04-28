@@ -1,0 +1,166 @@
+@include media_L {
+  .sign_up {
+    margin-bottom: -3rem;
+
+    &_photo {
+      &_img {
+        height: 450px;
+        width: 350px;
+      }
+    }
+  }
+}
+
+@include media_M {
+  .sign_up {
+    &__container {
+      grid-template-columns: 1fr 1fr;
+      gap: 0 5px;
+    }
+
+    &_photo {
+      &_img {
+        height: 400px;
+        width: 310px;
+      }
+    }
+
+    &_content {
+      &_title {
+        font-size: 40px;
+        line-height: 40px;
+      }
+
+      &_text {
+        font-size: 30px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+
+@include media_XS {
+  .sign_up {
+    &__container {
+      grid-template-columns: 1fr;
+      gap: 0;
+      position: relative;
+    }
+
+    &_photo {
+      grid-row: auto;
+      order: 2;
+      z-index: $z-index-sign-up-photo;
+
+      &_img {
+        transform: none;
+        height: $media-xs + $height-sign-up-additionally-img;
+        width: 100%;
+        box-shadow: none;
+        border-radius: 10px;
+      }
+    }
+
+    &_content {
+      order: 1;
+      text-align: center;
+
+      &_title {
+        font-size: 25px;
+        line-height: 25px;
+      }
+
+      &_text {
+        font-size: 25px;
+        margin-bottom: 40px;
+      }
+    }
+
+    &_button_sign_up {
+      position: absolute;
+      bottom: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+      order: 3;
+      z-index: $z-index-sign-up-button-sign-up;
+      width: $width-icon-button_sign_up;
+      height: $height-icon-button_sign_up;
+    }
+  }
+}
+
+@include media_XXS {
+  .sign_up {
+    &_photo {
+      &_img {
+        height: $media-xxs + $height-sign-up-additionally-img;
+      }
+    }
+
+    &_content {
+      &_title {
+        margin-bottom: 5px;
+      }
+
+      &_text {
+        margin-bottom: 30px;
+      }
+    }
+
+    &_button_sign_up {
+      width: $width-icon-button_sign_up-m;
+      height: $height-icon-button_sign_up-m;
+    }
+  }
+}
+
+@include media_XXXS {
+  .sign_up {
+    &_photo {
+      &_img {
+        height: $media-xxxs + $height-sign-up-additionally-img;
+      }
+    }
+
+    &_content {
+      &_title {
+        font-size: 20px;
+        line-height: 20px;
+      }
+
+      &_text {
+        font-size: 20px;
+        margin-bottom: 25px;
+      }
+    }
+  }
+}
+@include media_XXXXS {
+  .sign_up {
+    &_photo {
+      &_img {
+        height: $media-xxxxs + $height-sign-up-additionally-img;
+      }
+    }
+  }
+}
+
+@include media_XXXXS {
+  .sign_up {
+    &_photo {
+      &_img {
+        height: $media-xxxxs + $height-sign-up-additionally-img;
+      }
+    }
+  }
+}
+
+@include media_XXXXXS {
+  .sign_up {
+    &_photo {
+      &_img {
+        height: $media-xxxxxs + $height-sign-up-additionally-img;
+      }
+    }
+  }
+}

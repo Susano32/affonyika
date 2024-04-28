@@ -1,0 +1,156 @@
+@include media_L {
+  .header {
+    height: 60px;
+    margin-top: 10px;
+
+    &__logo {
+      &_img {
+        width: 180px;
+        height: 48px;
+      }
+    }
+
+    &__content {
+      font-size: 14px;
+    }
+
+    &__top_line {
+      &_social_list {
+        &_item {
+          &_link {
+            &_img {
+              height: 15px;
+              width: 15px;
+            }
+          }
+        }
+      }
+    }
+
+    &__bottom_line {
+      &_nav {
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+@include media_M {
+  .header {
+    &__logo {
+      &_img {
+        width: 175px;
+        height: 40px;
+      }
+    }
+
+    &__top_line {
+      margin-bottom: 5px;
+
+      &_infotime {
+        font-size: 11px;
+        padding-left: 10px;
+      }
+    }
+
+    &__bottom_line {
+      &_nav {
+        &_list {
+          &_item {
+            &_link {
+              padding: 0 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media_S {
+  .header {
+    &_container {
+      grid-template-columns: 1fr 4fr;
+    }
+
+    &__logo {
+      &_img {
+        width: 155px;
+        height: 35px;
+      }
+    }
+  }
+}
+
+@include media_XS {
+  .header {
+    margin-bottom: 50px;
+
+    &_container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      justify-items: center;
+      align-items: center;
+    }
+
+    &__logo {
+      order: 2;
+
+      &_img {
+        width: 180px;
+        height: 80px;
+      }
+    }
+
+    &__content {
+      display: none;
+    }
+
+    &__mobile {
+      &_phone {
+        order: 3;
+        display: block;
+        padding: 0;
+        width: $width-icon-phone-img-size-s;
+        height: $width-icon-phone-img-size-s;
+
+        & .phone__img {
+          width: $width-icon-phone-img-size-s;
+          height: $width-icon-phone-img-size-s;
+        }
+
+        &_txt {
+          display: none;
+        }
+      }
+
+      &_icon_menu {
+        display: block;
+        order: 1;
+      }
+    }
+  }
+}
+
+@include media_XXS {
+  .header {
+    margin-bottom: 35px;
+  }
+}
+
+@include media_XXXS {
+  .header {
+    margin-bottom: 30px;
+  }
+}
+@include media_XXXXS {
+  .header {
+    margin-bottom: 25px;
+  }
+}
+
+@include media_XXXXS {
+  .header {
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,111 @@
+.about_us {
+  @include borderRed;
+  position: relative;
+  background-color: transparent;
+  z-index: $z-index-about_us-section;
+  display: grid;
+
+  &__cloud_top,
+  &__cloud_buttom {
+    position: relative;
+    width: 100%;
+    z-index: $z-index-about_us-section-cloud;
+  }
+
+  &__container_wrapper {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    padding: 5.1rem 0;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    z-index: $z-index-about_us-section-container;
+  }
+
+  &__photos {
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    &_item {
+      position: absolute;
+      z-index: 100;
+
+      &_medium {
+        top: 0;
+        left: 110px;
+
+        &::before,
+        &::after {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+        }
+
+        &::before {
+          content: url("../../../public/assets/png/about_us__left_column_img_left.png");
+          left: -235px;
+          top: 160px;
+          z-index: -1;
+        }
+
+        &::after {
+          content: url("../../../public/assets/png/about_us__left_column_img_right.png");
+          top: 300px;
+          right: -140px;
+        }
+      }
+
+      &_img {
+      }
+    }
+  }
+
+  &__content {
+    margin-bottom: 30px;
+
+    &_title {
+      color: $color-font-text-about-us-list;
+      font-size: 30px;
+      font-weight: 500;
+      line-height: 50px;
+      letter-spacing: 0%;
+      text-transform: uppercase;
+    }
+
+    &_desc {
+      color: $color-font-text-about-us-desc;
+      font-size: 15px;
+      font-weight: normal;
+      line-height: 26px;
+      letter-spacing: 0%;
+      margin-bottom: 55px;
+    }
+
+    &_list {
+      color: $color-font-text-about-us-list;
+      font-size: 15px;
+      font-weight: normal;
+      line-height: 26px;
+      letter-spacing: 0%;
+      margin-bottom: 30px;
+
+      &_item {
+        position: relative;
+
+        &::before {
+          content: url("../../../public/assets/svg/about_us__content_list_item_icon_star.svg");
+          width: 16px;
+          height: 16px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+}
