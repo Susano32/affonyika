@@ -1,0 +1,21 @@
+@include media_XS {
+  .close {
+    &::after {
+      border: none;
+    }
+
+    &:hover {
+      .close__content {
+        transition: none;
+        transform: none;
+      }
+
+      &::after {
+        transition: none;
+        width: 0;
+        height: 0;
+        border: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.footer {
+  position: relative;
+  top: -150px;
+  text-align: center;
+
+  &__map {
+    width: 1458px;
+    height: 452px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    border-radius: 50px;
+  }
+  &__logo {
+    margin-bottom: 35px;
+  }
+  &__social_list {
+    margin-bottom: 35px;
+  }
+  &__phone {
+    box-shadow: none;
+    margin: 0 auto;
+    margin-bottom: 13px;
+  }
+  &__adress {
+  }
+  &__mail {
+    margin-bottom: 45px;
+  }
+  &__btn {
+    margin-bottom: 55px;
+  }
+  &__copyright {
+    margin-bottom: 23px;
+  }
+}

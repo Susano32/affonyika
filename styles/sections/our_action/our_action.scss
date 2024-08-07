@@ -1,0 +1,137 @@
+.our_action {
+  overflow: hidden;
+  margin-top: -10px;
+
+  &__cloud_top,
+  &__cloud_buttom {
+    z-index: 100;
+  }
+
+  &__cloud_top {
+    top: 10px;
+  }
+
+  &__cloud_buttom {
+    background-color: rgb(255, 255, 255);
+  }
+
+  &__container_wrapper {
+    background-color: rgb(255, 255, 255);
+    z-index: 100;
+  }
+
+  &__container {
+  }
+
+  &__section_header {
+    margin-bottom: 80px;
+
+    &_title {
+      color: rgb(248, 108, 155);
+    }
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 389px);
+    gap: 17px;
+    justify-content: center;
+    position: relative;
+
+    &::before,
+    &::after {
+      position: absolute;
+      z-index: 300;
+      width: 788px;
+      height: 787px;
+      border-radius: 50%;
+      transform: translateX(50%);
+      bottom: 25%;
+    }
+
+    &::before {
+      content: url("../../../public/assets/png/our_action/bg.png");
+      right: 45%;
+    }
+
+    &::after {
+      content: url("../../../public/assets/png/our_action/bg.png");
+      left: -10%;
+    }
+
+    &_item {
+      z-index: 400;
+      background-color: rgb(255, 255, 255);
+      border-radius: 30px;
+      width: 389px;
+      max-height: 412px;
+      height: 100%;
+      overflow: hidden;
+
+      &_bg {
+        position: relative;
+
+        &::after {
+          position: absolute;
+          content: url("../../../public/assets/svg/our_services/bg-sky.svg");
+          bottom: 0;
+          left: 0;
+        }
+
+        &_img {
+          height: 285px;
+          width: 389px;
+        }
+      }
+
+      &_content {
+        background-color: rgb(255, 255, 255);
+        position: relative;
+
+        &_price {
+          position: absolute;
+          right: 50%;
+          bottom: 100%;
+          transform: translate(50%);
+
+          text-align: center;
+          background-color: rgba(230, 61, 56, 0.8);
+          width: 110px;
+          height: 110px;
+          border-radius: 50%;
+          display: inline-flex;
+          justify-content: center;
+          align-items: start;
+          flex-direction: column;
+          padding: 10px;
+          color: rgb(255, 255, 255);
+          font-weight: 700;
+          line-height: 16px;
+          letter-spacing: 0%;
+
+          &_title {
+            font-size: 16px;
+            width: 100%;
+            margin-bottom: 7px;
+            width: 83px;
+          }
+
+          &_value {
+            font-size: 23px;
+            width: 100%;
+          }
+        }
+
+        &_title {
+          font-size: 21px;
+          font-weight: 700;
+          line-height: 50px;
+          letter-spacing: 0%;
+          color: rgb(63, 63, 63);
+          text-align: center;
+          margin-bottom: 33px;
+        }
+      }
+    }
+  }
+}

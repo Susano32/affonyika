@@ -41,6 +41,8 @@
 
 @include media_XS {
   .sign_up {
+    margin-bottom: -8rem;
+
     &__container {
       grid-template-columns: 1fr;
       gap: 0;
@@ -78,6 +80,7 @@
 
     &_button_sign_up {
       position: absolute;
+      top: 800px;
       bottom: 10%;
       left: 50%;
       transform: translateX(-50%);
@@ -108,6 +111,7 @@
     }
 
     &_button_sign_up {
+      top: 700px;
       width: $width-icon-button_sign_up-m;
       height: $height-icon-button_sign_up-m;
     }
@@ -116,6 +120,8 @@
 
 @include media_XXXS {
   .sign_up {
+    margin-bottom: -7rem;
+
     &_photo {
       &_img {
         height: $media-xxxs + $height-sign-up-additionally-img;
@@ -142,15 +148,9 @@
         height: $media-xxxxs + $height-sign-up-additionally-img;
       }
     }
-  }
-}
 
-@include media_XXXXS {
-  .sign_up {
-    &_photo {
-      &_img {
-        height: $media-xxxxs + $height-sign-up-additionally-img;
-      }
+    &_button_sign_up {
+      top: 500px;
     }
   }
 }
@@ -161,6 +161,10 @@
       &_img {
         height: $media-xxxxxs + $height-sign-up-additionally-img;
       }
+    }
+
+    &_button_sign_up {
+      top: 400px;
     }
   }
 }

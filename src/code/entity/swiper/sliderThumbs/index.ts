@@ -1,0 +1,1 @@
+export { createSliderThumbs } from "./sliderThumbs";

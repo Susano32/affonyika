@@ -1,9 +1,12 @@
+$widthItem: 400px;
+$heightItem: 400px;
+
 .about_us {
-  @include borderRed;
   position: relative;
   background-color: transparent;
   z-index: $z-index-about_us-section;
   display: grid;
+  overflow: hidden;
 
   &__cloud_top,
   &__cloud_buttom {
@@ -26,48 +29,50 @@
 
   &__photos {
     position: relative;
-    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
 
     &_item {
+      width: $widthItem;
+      height: $heightItem;
       position: absolute;
-      z-index: 100;
+
+      &_left {
+        z-index: 100;
+        left: 0;
+        top: 210px;
+
+        .about_us__photos_item_img {
+          width: calc($widthItem / 1.5);
+          height: calc($heightItem / 1.5);
+        }
+      }
 
       &_medium {
-        top: 0;
-        left: 110px;
+        z-index: 110;
+      }
 
-        &::before,
-        &::after {
-          position: absolute;
-          width: 100%;
-          height: 100%;
-        }
+      &_right {
+        z-index: 120;
+        right: -9rem;
+        top: calc($widthItem / 1.5) + 50px;
 
-        &::before {
-          content: url("../../../public/assets/png/about_us__left_column_img_left.png");
-          left: -235px;
-          top: 160px;
-          z-index: -1;
-        }
-
-        &::after {
-          content: url("../../../public/assets/png/about_us__left_column_img_right.png");
-          top: 300px;
-          right: -140px;
+        .about_us__photos_item_img {
+          width: calc($widthItem / 2);
+          height: calc($heightItem / 2);
         }
       }
 
       &_img {
+        width: $widthItem;
+        height: $heightItem;
       }
     }
   }
 
   &__content {
+    z-index: 400;
     margin-bottom: 30px;
 
     &_title {
@@ -95,15 +100,15 @@
       line-height: 26px;
       letter-spacing: 0%;
       margin-bottom: 30px;
+      padding-left: 20px;
 
       &_item {
         position: relative;
 
         &::before {
+          position: absolute;
           content: url("../../../public/assets/svg/about_us__content_list_item_icon_star.svg");
-          width: 16px;
-          height: 16px;
-          margin-right: 10px;
+          left: -20px;
         }
       }
     }

@@ -30,7 +30,7 @@
     <title>Афонька детская парикмахерская в Раменском</title>
 
     <link rel="stylesheet" href="styles/index.scss" />
-    <script defer src="./src/index.ts"></script>
+    <script defer src="./src/index.ts" type="module"></script>
   </head>
 
   <body>
@@ -170,9 +170,23 @@
       <div class="about_us__container_wrapper">
         <div class="about_us__container container">
           <ul class="about_us__photos">
+            <li class="about_us__photos_item about_us__photos_item_left">
+              <img
+                src="./public/assets/png/about_us__left_column_img_left.png"
+                alt=""
+                class="about_us__photos_item_img"
+              />
+            </li>
             <li class="about_us__photos_item about_us__photos_item_medium">
               <img
                 src="./public/assets/png/about_us__left_column_img_meduim.png"
+                alt=""
+                class="about_us__photos_item_img"
+              />
+            </li>
+            <li class="about_us__photos_item about_us__photos_item_right">
+              <img
+                src="./public/assets/png/about_us__left_column_img_right.png"
                 alt=""
                 class="about_us__photos_item_img"
               />
@@ -213,6 +227,2287 @@
         src="./public/assets/png/cloud_bottom.png"
       />
     </section>
+
+    <section class="our_services">
+      <div class="our_services__container container">
+        <div class="our_services__slider">
+          <div
+            thumbsSlider=""
+            class="our_services__slider_thumbs swiper"
+            id="our_services__slider_thumbs"
+          >
+            <div
+              class="section_header our_services__slider_thumbs_section_header"
+            >
+              <p class="section_header__title">Наши услуги</p>
+              <img src="./public/assets/svg/scissors.svg" alt="" />
+            </div>
+            <div class="swiper-wrapper" name="swiper-wrapper">
+              <div class="swiper-slide our_services__slider_thumbs_card">
+                <div class="our_services__slider_thumbs_card_bg">
+                  <img
+                    src="./public/assets/png/our_services/our_services__slider_thumbs_card_child.png"
+                    alt=""
+                    class="our_services__slider_thumbs_card_bg_img"
+                  />
+                </div>
+                <div class="our_services__slider_thumbs_card_content">
+                  <p class="our_services__slider_thumbs_card_content_title">
+                    Детский зал
+                  </p>
+                  <!-- max length 218 symbols -->
+                  <div class="our_services__slider_thumbs_card_content_desc">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id
+                    odit, recusandae, fugiat repellat suscipit quia adipisci et
+                    doloribus qui laborum delectus! Commodi, numquam quae
+                    nesciunt facilis labore cupiditate animi a!
+                  </div>
+                </div>
+                <button
+                  class="button_main our_services__slider_thumbs_card_btn"
+                >
+                  Подробнее
+                </button>
+              </div>
+              <div class="swiper-slide our_services__slider_thumbs_card">
+                <div class="our_services__slider_thumbs_card_bg">
+                  <img
+                    src="./public/assets/png/our_services/our_services__slider_thumbs_card_men.png"
+                    alt=""
+                    class="our_services__slider_thumbs_card_bg_img"
+                  />
+                </div>
+                <div class="our_services__slider_thumbs_card_content">
+                  <p class="our_services__slider_thumbs_card_content_title">
+                    Мужской зал
+                  </p>
+                  <div class="our_services__slider_thumbs_card_content_desc">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id
+                    odit, recusandae, fugiat repellat suscipit quia adipisci et
+                    doloribus qui laborum delectus! Commodi, numquam quae
+                    nesciunt facilis labore cupiditate animi a!
+                  </div>
+                </div>
+                <button
+                  class="button_main our_services__slider_thumbs_card_btn"
+                >
+                  Подробнее
+                </button>
+              </div>
+              <div class="swiper-slide our_services__slider_thumbs_card">
+                <div class="our_services__slider_thumbs_card_bg">
+                  <img
+                    src="./public/assets/png/our_services/our_services__slider_thumbs_card_woman.png"
+                    alt=""
+                    class="our_services__slider_thumbs_card_bg_img"
+                  />
+                </div>
+                <div class="our_services__slider_thumbs_card_content">
+                  <p class="our_services__slider_thumbs_card_content_title">
+                    Женский зал
+                  </p>
+                  <div class="our_services__slider_thumbs_card_content_desc">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id
+                    odit, recusandae, fugiat repellat suscipit quia adipisci et
+                    doloribus qui laborum delectus! Commodi, numquam quae
+                    nesciunt facilis labore cupiditate animi a!
+                  </div>
+                </div>
+                <button
+                  class="button_main our_services__slider_thumbs_card_btn"
+                >
+                  Подробнее
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="our_services__slider_main swiper"
+            id="our_services__slider_main"
+          >
+            <div
+              class="swiper-wrapper"
+              name="swiper-wrapper"
+              id="our_services__slider_main_swiper-wrapper"
+            >
+              <div class="swiper-slide"></div>
+              <div
+                class="swiper-slide our_services__slider_main_slide our_services__slider_main_child_slide"
+              >
+                <div class="our_services__slider_main_child_slide_haircut">
+                  <div
+                    class="our_services__slider_main_slide_title our_services__slider_main_child_slide_haircut_title"
+                  >
+                    Стрижки
+                  </div>
+                  <ul
+                    class="our_services__slider_main_slide_cards our_services__slider_main_child_slide_haircut_cards"
+                  >
+                    <li
+                      class="card_our_services our_services__slider_main_child_slide_haircut_cards_item"
+                    >
+                      <div class="card_our_services_bg">
+                        <img
+                          class="card_our_services_bg_img"
+                          src="./public/assets/png/our_services/child/haircut/our_services__slider_main_child_slide_haircut_1.png"
+                        />
+                      </div>
+                      <div class="card_our_services_price">
+                        <div class="card_our_services_price_title">
+                          Цена от:
+                        </div>
+                        <div class="card_our_services_price_value">
+                          700 <sub>р.</sub>
+                        </div>
+                      </div>
+                      <div class="card_our_services_content">
+                        <div class="card_our_services_content_title">
+                          Детская Стрижка Мальчик
+                        </div>
+                        <div class="card_our_services_content_desc">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Ab eum hic provident sapiente quae quisquam
+                          facilis?
+                        </div>
+                        <ul class="card_our_services_content_info">
+                          <li class="card_our_services_content_info_item">
+                            <div
+                              class="card_our_services_content_info_item_title"
+                            >
+                              Возраст:
+                            </div>
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              от 6 мес
+                            </div>
+                          </li>
+                          <li class="card_our_services_content_info_item">
+                            <div>Время:</div>
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              30 - 40 мин.
+                            </div>
+                          </li>
+                          <li class="card_our_services_content_info_item">
+                            <div
+                              class="card_our_services_content_info_item_title"
+                            >
+                              Пол:
+                            </div>
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              М
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <button class="button_main card_our_services_btn">
+                        Заказать стрижку
+                      </button>
+                    </li>
+                    <li
+                      class="card_our_services our_services__slider_main_child_slide_haircut_cards_item"
+                    >
+                      <div class="card_our_services_bg">
+                        <img
+                          class="card_our_services_bg_img"
+                          src="./public/assets/png/our_services/child/haircut/our_services__slider_main_child_slide_haircut_2.png"
+                        />
+                      </div>
+                      <div class="card_our_services_price">
+                        <div class="card_our_services_price_title">
+                          Цена от:
+                        </div>
+                        <div class="card_our_services_price_value">
+                          700 <sub>р.</sub>
+                        </div>
+                      </div>
+                      <div class="card_our_services_content">
+                        <div class="card_our_services_content_title">
+                          Детская Стрижка Мальчик
+                        </div>
+                        <div class="card_our_services_content_desc">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Ab eum hic provident sapiente quae quisquam
+                          facilis?
+                        </div>
+                        <ul class="card_our_services_content_info">
+                          <li class="card_our_services_content_info_item">
+                            <div
+                              class="card_our_services_content_info_item_title"
+                            >
+                              Возраст:
+                            </div>
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              от 6 мес
+                            </div>
+                          </li>
+                          <li class="card_our_services_content_info_item">
+                            Время:
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              30 - 40 мин.
+                            </div>
+                          </li>
+                          <li class="card_our_services_content_info_item">
+                            <div
+                              class="card_our_services_content_info_item_title"
+                            >
+                              Пол:
+                            </div>
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              М
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <button class="button_main card_our_services_btn">
+                        Заказать стрижку
+                      </button>
+                    </li>
+                    <li
+                      class="card_our_services our_services__slider_main_child_slide_haircut_cards_item"
+                    >
+                      <div class="card_our_services_bg">
+                        <img
+                          class="card_our_services_bg_img"
+                          src="./public/assets/png/our_services/child/haircut/our_services__slider_main_child_slide_haircut_3.png"
+                        />
+                      </div>
+                      <div class="card_our_services_price">
+                        <div class="card_our_services_price_title">
+                          Цена от:
+                        </div>
+                        <div class="card_our_services_price_value">
+                          700 <sub>р.</sub>
+                        </div>
+                      </div>
+                      <div class="card_our_services_content">
+                        <div class="card_our_services_content_title">
+                          Детская Стрижка Мальчик
+                        </div>
+                        <div class="card_our_services_content_desc">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Ab eum hic provident sapiente quae quisquam
+                          facilis?
+                        </div>
+                        <ul class="card_our_services_content_info">
+                          <li class="card_our_services_content_info_item">
+                            <div
+                              class="card_our_services_content_info_item_title"
+                            >
+                              Возраст:
+                            </div>
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              от 6 мес
+                            </div>
+                          </li>
+                          <li class="card_our_services_content_info_item">
+                            Время:
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              30 - 40 мин.
+                            </div>
+                          </li>
+                          <li class="card_our_services_content_info_item">
+                            <div
+                              class="card_our_services_content_info_item_title"
+                            >
+                              Пол:
+                            </div>
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              М
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <button class="button_main card_our_services_btn">
+                        Заказать стрижку
+                      </button>
+                    </li>
+                    <li
+                      class="card_our_services_long our_services__slider_main_child_slide_haircut_cards_item"
+                    >
+                      <div class="card_our_services_long_bg">
+                        <img
+                          class="card_our_services_long_bg_img"
+                          src="./public/assets/png/our_services/child/haircut/our_services__slider_main_child_slide_haircut_4.png"
+                        />
+                      </div>
+                      <div class="card_our_services_long_content">
+                        <div class="card_our_services_long_content_title">
+                          Детская Стрижка Мальчик
+                        </div>
+                        <div class="card_our_services_long_content_desc">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Ab eum hic provident sapiente quae quisquam
+                          facilis?
+                        </div>
+                        <ul class="card_our_services_long_content_info">
+                          <li class="card_our_services_long_content_info_item">
+                            <div
+                              class="card_our_services_long_content_info_item_title"
+                            >
+                              Возраст:
+                            </div>
+                            <div
+                              class="card_our_services_long_content_info_item_value"
+                            >
+                              от 6 мес
+                            </div>
+                          </li>
+                          <li class="card_our_services_long_content_info_item">
+                            <div>Время:</div>
+                            <div
+                              class="card_our_services_long_content_info_item_value"
+                            >
+                              30 - 40 мин.
+                            </div>
+                          </li>
+                          <li class="card_our_services_long_content_info_item">
+                            <div
+                              class="card_our_services_long_content_info_item_title"
+                            >
+                              Пол:
+                            </div>
+                            <div
+                              class="card_our_services_long_content_info_item_value"
+                            >
+                              М
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="card_our_services_long_wrapper_price_and_btn">
+                        <div
+                          class="card_our_services_long_wrapper_price_and_btn_price"
+                        >
+                          <div
+                            class="card_our_services_long_wrapper_price_and_btn_price_title"
+                          >
+                            Цена от:
+                          </div>
+                          <div
+                            class="card_our_services_long_wrapper_price_and_btn_price_value"
+                          >
+                            700 <sub>р.</sub>
+                          </div>
+                        </div>
+                        <button
+                          class="button_main card_our_services_long_wrapper_price_and_btn_btn"
+                        >
+                          Заказать стрижку
+                        </button>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="our_services__slider_main_child_slide_hairstyle">
+                  <div
+                    class="our_services__slider_main_slide_title our_services__slider_main_child_slide_hairstyle_title"
+                  >
+                    Прически
+                  </div>
+                  <ul
+                    class="our_services__slider_main_slide_cards our_services__slider_main_child_slide_hairstyle_cards"
+                  >
+                    <li
+                      class="card_our_services our_services__slider_main_child_slide_hairstyle_card_item"
+                    >
+                      <div class="card_our_services_bg">
+                        <img
+                          class="card_our_services_bg_img"
+                          src="./public/assets/png/our_services/child/hairstyle/our_services__slider_main_child_slide_hairstyle_1.png"
+                        />
+                      </div>
+                      <div class="card_our_services_price">
+                        <div class="card_our_services_price_title">
+                          Цена от:
+                        </div>
+                        <div class="card_our_services_price_value">
+                          700 <sub>р.</sub>
+                        </div>
+                      </div>
+                      <div class="card_our_services_content">
+                        <div class="card_our_services_content_title">
+                          Детская Стрижка Мальчик
+                        </div>
+                        <div class="card_our_services_content_desc">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Ab eum hic provident sapiente quae quisquam
+                          facilis?
+                        </div>
+                        <ul class="card_our_services_content_info">
+                          <li class="card_our_services_content_info_item">
+                            <div
+                              class="card_our_services_content_info_item_title"
+                            >
+                              Возраст:
+                            </div>
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              от 6 мес
+                            </div>
+                          </li>
+                          <li class="card_our_services_content_info_item">
+                            Время:
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              30 - 40 мин.
+                            </div>
+                          </li>
+                          <li class="card_our_services_content_info_item">
+                            <div
+                              class="card_our_services_content_info_item_title"
+                            >
+                              Пол:
+                            </div>
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              М
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <button class="button_main card_our_services_btn">
+                        Заказать стрижку
+                      </button>
+                    </li>
+                    <li
+                      class="card_our_services our_services__slider_main_child_slide_hairstyle_card_item"
+                    >
+                      <div class="card_our_services_bg">
+                        <img
+                          class="card_our_services_bg_img"
+                          src="./public/assets/png/our_services/child/hairstyle/our_services__slider_main_child_slide_hairstyle_2.png"
+                        />
+                      </div>
+                      <div class="card_our_services_price">
+                        <div class="card_our_services_price_title">
+                          Цена от:
+                        </div>
+                        <div class="card_our_services_price_value">
+                          700 <sub>р.</sub>
+                        </div>
+                      </div>
+                      <div class="card_our_services_content">
+                        <div class="card_our_services_content_title">
+                          Детская Стрижка Мальчик
+                        </div>
+                        <div class="card_our_services_content_desc">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Ab eum hic provident sapiente quae quisquam
+                          facilis?
+                        </div>
+                        <ul class="card_our_services_content_info">
+                          <li class="card_our_services_content_info_item">
+                            <div
+                              class="card_our_services_content_info_item_title"
+                            >
+                              Возраст:
+                            </div>
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              от 6 мес
+                            </div>
+                          </li>
+                          <li class="card_our_services_content_info_item">
+                            Время:
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              30 - 40 мин.
+                            </div>
+                          </li>
+                          <li class="card_our_services_content_info_item">
+                            <div
+                              class="card_our_services_content_info_item_title"
+                            >
+                              Пол:
+                            </div>
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              М
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <button class="button_main card_our_services_btn">
+                        Заказать стрижку
+                      </button>
+                    </li>
+                    <li
+                      class="card_our_services our_services__slider_main_child_slide_hairstyle_card_item"
+                    >
+                      <div class="card_our_services_bg">
+                        <img
+                          class="card_our_services_bg_img"
+                          src="./public/assets/png/our_services/child/hairstyle/our_services__slider_main_child_slide_hairstyle_3.png"
+                        />
+                      </div>
+                      <div class="card_our_services_price">
+                        <div class="card_our_services_price_title">
+                          Цена от:
+                        </div>
+                        <div class="card_our_services_price_value">
+                          700 <sub>р.</sub>
+                        </div>
+                      </div>
+                      <div class="card_our_services_content">
+                        <div class="card_our_services_content_title">
+                          Детская Стрижка Мальчик
+                        </div>
+                        <div class="card_our_services_content_desc">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Ab eum hic provident sapiente quae quisquam
+                          facilis?
+                        </div>
+                        <ul class="card_our_services_content_info">
+                          <li class="card_our_services_content_info_item">
+                            <div
+                              class="card_our_services_content_info_item_title"
+                            >
+                              Возраст:
+                            </div>
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              от 6 мес
+                            </div>
+                          </li>
+                          <li class="card_our_services_content_info_item">
+                            Время:
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              30 - 40 мин.
+                            </div>
+                          </li>
+                          <li class="card_our_services_content_info_item">
+                            <div
+                              class="card_our_services_content_info_item_title"
+                            >
+                              Пол:
+                            </div>
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              М
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <button class="button_main card_our_services_btn">
+                        Заказать стрижку
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <div class="our_services__slider_main_child_slide_braids">
+                  <div
+                    class="our_services__slider_main_slide_title our_services__slider_main_child_slide_braids_title"
+                  >
+                    Афро-косы
+                  </div>
+                  <ul
+                    class="our_services__slider_main_slide_cards our_services__slider_main_child_slide_braids_cards"
+                  >
+                    <li
+                      class="card_our_services our_services__slider_main_child_slide_braids_card_item"
+                    >
+                      <div class="card_our_services_bg">
+                        <img
+                          class="card_our_services_bg_img"
+                          src="./public/assets/png/our_services/child/braids/our_services__slider_main_child_slide_braids_1.png"
+                        />
+                      </div>
+                      <div class="card_our_services_price">
+                        <div class="card_our_services_price_title">
+                          Цена от:
+                        </div>
+                        <div class="card_our_services_price_value">
+                          700 <sub>р.</sub>
+                        </div>
+                      </div>
+                      <div class="card_our_services_content">
+                        <div class="card_our_services_content_title">
+                          Детская Стрижка Мальчик
+                        </div>
+                        <div class="card_our_services_content_desc">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Ab eum hic provident sapiente quae quisquam
+                          facilis?
+                        </div>
+                        <ul class="card_our_services_content_info">
+                          <li class="card_our_services_content_info_item">
+                            <div
+                              class="card_our_services_content_info_item_title"
+                            >
+                              Возраст:
+                            </div>
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              от 6 мес
+                            </div>
+                          </li>
+                          <li class="card_our_services_content_info_item">
+                            Время:
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              30 - 40 мин.
+                            </div>
+                          </li>
+                          <li class="card_our_services_content_info_item">
+                            <div
+                              class="card_our_services_content_info_item_title"
+                            >
+                              Пол:
+                            </div>
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              М
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <button class="button_main card_our_services_btn">
+                        Заказать стрижку
+                      </button>
+                    </li>
+                    <li
+                      class="card_our_services our_services__slider_main_child_slide_braids_card_item"
+                    >
+                      <div class="card_our_services_bg">
+                        <img
+                          class="card_our_services_bg_img"
+                          src="./public/assets/png/our_services/child/braids/our_services__slider_main_child_slide_braids_2.png"
+                        />
+                      </div>
+                      <div class="card_our_services_price">
+                        <div class="card_our_services_price_title">
+                          Цена от:
+                        </div>
+                        <div class="card_our_services_price_value">
+                          700 <sub>р.</sub>
+                        </div>
+                      </div>
+                      <div class="card_our_services_content">
+                        <div class="card_our_services_content_title">
+                          Детская Стрижка Мальчик
+                        </div>
+                        <div class="card_our_services_content_desc">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Ab eum hic provident sapiente quae quisquam
+                          facilis?
+                        </div>
+                        <ul class="card_our_services_content_info">
+                          <li class="card_our_services_content_info_item">
+                            <div
+                              class="card_our_services_content_info_item_title"
+                            >
+                              Возраст:
+                            </div>
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              от 6 мес
+                            </div>
+                          </li>
+                          <li class="card_our_services_content_info_item">
+                            Время:
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              30 - 40 мин.
+                            </div>
+                          </li>
+                          <li class="card_our_services_content_info_item">
+                            <div
+                              class="card_our_services_content_info_item_title"
+                            >
+                              Пол:
+                            </div>
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              М
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <button class="button_main card_our_services_btn">
+                        Заказать стрижку
+                      </button>
+                    </li>
+                    <li
+                      class="card_our_services our_services__slider_main_child_slide_braids_card_item"
+                    >
+                      <div class="card_our_services_bg">
+                        <img
+                          class="card_our_services_bg_img"
+                          src="./public/assets/png/our_services/child/braids/our_services__slider_main_child_slide_braids_3.png"
+                        />
+                      </div>
+                      <div class="card_our_services_price">
+                        <div class="card_our_services_price_title">
+                          Цена от:
+                        </div>
+                        <div class="card_our_services_price_value">
+                          700 <sub>р.</sub>
+                        </div>
+                      </div>
+                      <div class="card_our_services_content">
+                        <div class="card_our_services_content_title">
+                          Детская Стрижка Мальчик
+                        </div>
+                        <div class="card_our_services_content_desc">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Ab eum hic provident sapiente quae quisquam
+                          facilis?
+                        </div>
+                        <ul class="card_our_services_content_info">
+                          <li class="card_our_services_content_info_item">
+                            <div
+                              class="card_our_services_content_info_item_title"
+                            >
+                              Возраст:
+                            </div>
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              от 6 мес
+                            </div>
+                          </li>
+                          <li class="card_our_services_content_info_item">
+                            Время:
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              30 - 40 мин.
+                            </div>
+                          </li>
+                          <li class="card_our_services_content_info_item">
+                            <div
+                              class="card_our_services_content_info_item_title"
+                            >
+                              Пол:
+                            </div>
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              М
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <button class="button_main card_our_services_btn">
+                        Заказать стрижку
+                      </button>
+                    </li>
+                    <li
+                      class="card_our_services our_services__slider_main_child_slide_braids_card_item"
+                    >
+                      <div class="card_our_services_bg">
+                        <img
+                          class="card_our_services_bg_img"
+                          src="./public/assets/png/our_services/child/braids/our_services__slider_main_child_slide_braids_4.png"
+                        />
+                      </div>
+                      <div class="card_our_services_price">
+                        <div class="card_our_services_price_title">
+                          Цена от:
+                        </div>
+                        <div class="card_our_services_price_value">
+                          700 <sub>р.</sub>
+                        </div>
+                      </div>
+                      <div class="card_our_services_content">
+                        <div class="card_our_services_content_title">
+                          Детская Стрижка Мальчик
+                        </div>
+                        <div class="card_our_services_content_desc">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Ab eum hic provident sapiente quae quisquam
+                          facilis?
+                        </div>
+                        <ul class="card_our_services_content_info">
+                          <li class="card_our_services_content_info_item">
+                            <div
+                              class="card_our_services_content_info_item_title"
+                            >
+                              Возраст:
+                            </div>
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              от 6 мес
+                            </div>
+                          </li>
+                          <li class="card_our_services_content_info_item">
+                            Время:
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              30 - 40 мин.
+                            </div>
+                          </li>
+                          <li class="card_our_services_content_info_item">
+                            <div
+                              class="card_our_services_content_info_item_title"
+                            >
+                              Пол:
+                            </div>
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              М
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <button class="button_main card_our_services_btn">
+                        Заказать стрижку
+                      </button>
+                    </li>
+                    <li
+                      class="card_our_services our_services__slider_main_child_slide_braids_card_item"
+                    >
+                      <div class="card_our_services_bg">
+                        <img
+                          class="card_our_services_bg_img"
+                          src="./public/assets/png/our_services/child/braids/our_services__slider_main_child_slide_braids_5.png"
+                        />
+                      </div>
+                      <div class="card_our_services_price">
+                        <div class="card_our_services_price_title">
+                          Цена от:
+                        </div>
+                        <div class="card_our_services_price_value">
+                          700 <sub>р.</sub>
+                        </div>
+                      </div>
+                      <div class="card_our_services_content">
+                        <div class="card_our_services_content_title">
+                          Детская Стрижка Мальчик
+                        </div>
+                        <div class="card_our_services_content_desc">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Ab eum hic provident sapiente quae quisquam
+                          facilis?
+                        </div>
+                        <ul class="card_our_services_content_info">
+                          <li class="card_our_services_content_info_item">
+                            <div
+                              class="card_our_services_content_info_item_title"
+                            >
+                              Возраст:
+                            </div>
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              от 6 мес
+                            </div>
+                          </li>
+                          <li class="card_our_services_content_info_item">
+                            Время:
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              30 - 40 мин.
+                            </div>
+                          </li>
+                          <li class="card_our_services_content_info_item">
+                            <div
+                              class="card_our_services_content_info_item_title"
+                            >
+                              Пол:
+                            </div>
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              М
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <button class="button_main card_our_services_btn">
+                        Заказать стрижку
+                      </button>
+                    </li>
+                    <li
+                      class="card_our_services our_services__slider_main_child_slide_braids_card_item"
+                    >
+                      <div class="card_our_services_bg">
+                        <img
+                          class="card_our_services_bg_img"
+                          src="./public/assets/png/our_services/child/braids/our_services__slider_main_child_slide_braids_6.png"
+                        />
+                      </div>
+                      <div class="card_our_services_price">
+                        <div class="card_our_services_price_title">
+                          Цена от:
+                        </div>
+                        <div class="card_our_services_price_value">
+                          700 <sub>р.</sub>
+                        </div>
+                      </div>
+                      <div class="card_our_services_content">
+                        <div class="card_our_services_content_title">
+                          Детская Стрижка Мальчик
+                        </div>
+                        <div class="card_our_services_content_desc">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Ab eum hic provident sapiente quae quisquam
+                          facilis?
+                        </div>
+                        <ul class="card_our_services_content_info">
+                          <li class="card_our_services_content_info_item">
+                            <div
+                              class="card_our_services_content_info_item_title"
+                            >
+                              Возраст:
+                            </div>
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              от 6 мес
+                            </div>
+                          </li>
+                          <li class="card_our_services_content_info_item">
+                            Время:
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              30 - 40 мин.
+                            </div>
+                          </li>
+                          <li class="card_our_services_content_info_item">
+                            <div
+                              class="card_our_services_content_info_item_title"
+                            >
+                              Пол:
+                            </div>
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              М
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <button class="button_main card_our_services_btn">
+                        Заказать стрижку
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                class="swiper-slide our_services__slider_main_slide our_services__slider_main_men_slide"
+              >
+                <div class="our_services__slider_main_men_slide_haircut">
+                  <div
+                    class="our_services__slider_main_slide_title our_services__slider_main_men_slide_haircut_title"
+                  >
+                    Стрижки
+                  </div>
+                  <ul
+                    class="our_services__slider_main_slide_cards our_services__slider_main_men_slide_haircut_cards"
+                  >
+                    <li
+                      class="card_our_services our_services__slider_main_men_slide_haircut_cards_item"
+                    >
+                      <div class="card_our_services_bg">
+                        <img
+                          class="card_our_services_bg_img"
+                          src="./public/assets/png/our_services/men/haircut/our_services__slider_main_men_slide_haircut_1.png"
+                        />
+                      </div>
+                      <div class="card_our_services_price">
+                        <div class="card_our_services_price_title">
+                          Цена от:
+                        </div>
+                        <div class="card_our_services_price_value">
+                          700 <sub>р.</sub>
+                        </div>
+                      </div>
+                      <div class="card_our_services_content">
+                        <div class="card_our_services_content_title">
+                          Детская Стрижка Мальчик
+                        </div>
+                        <div class="card_our_services_content_desc">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Ab eum hic provident sapiente quae quisquam
+                          facilis?
+                        </div>
+                        <ul class="card_our_services_content_info">
+                          <li class="card_our_services_content_info_item">
+                            <div
+                              class="card_our_services_content_info_item_title"
+                            >
+                              Возраст:
+                            </div>
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              от 6 мес
+                            </div>
+                          </li>
+                          <li class="card_our_services_content_info_item">
+                            Время:
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              30 - 40 мин.
+                            </div>
+                          </li>
+                          <li class="card_our_services_content_info_item">
+                            <div
+                              class="card_our_services_content_info_item_title"
+                            >
+                              Пол:
+                            </div>
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              М
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <button class="button_main card_our_services_btn">
+                        Заказать стрижку
+                      </button>
+                    </li>
+                    <li
+                      class="card_our_services our_services__slider_main_men_slide_haircut_cards_item"
+                    >
+                      <div class="card_our_services_bg">
+                        <img
+                          class="card_our_services_bg_img"
+                          src="./public/assets/png/our_services/men/haircut/our_services__slider_main_men_slide_haircut_2.png"
+                        />
+                      </div>
+                      <div class="card_our_services_price">
+                        <div class="card_our_services_price_title">
+                          Цена от:
+                        </div>
+                        <div class="card_our_services_price_value">
+                          700 <sub>р.</sub>
+                        </div>
+                      </div>
+                      <div class="card_our_services_content">
+                        <div class="card_our_services_content_title">
+                          Детская Стрижка Мальчик
+                        </div>
+                        <div class="card_our_services_content_desc">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Ab eum hic provident sapiente quae quisquam
+                          facilis?
+                        </div>
+                        <ul class="card_our_services_content_info">
+                          <li class="card_our_services_content_info_item">
+                            <div
+                              class="card_our_services_content_info_item_title"
+                            >
+                              Возраст:
+                            </div>
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              от 6 мес
+                            </div>
+                          </li>
+                          <li class="card_our_services_content_info_item">
+                            Время:
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              30 - 40 мин.
+                            </div>
+                          </li>
+                          <li class="card_our_services_content_info_item">
+                            <div
+                              class="card_our_services_content_info_item_title"
+                            >
+                              Пол:
+                            </div>
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              М
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <button class="button_main card_our_services_btn">
+                        Заказать стрижку
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                class="swiper-slide our_services__slider_main_slide our_services__slider_main_woman_slide"
+              >
+                <div class="our_services__slider_main_woman_slide_haircut">
+                  <div
+                    class="our_services__slider_main_slide_title our_services__slider_main_woman_slide_haircut_title"
+                  >
+                    Стрижки
+                  </div>
+                  <ul
+                    class="our_services__slider_main_slide_cards our_services__slider_main_woman_slide_haircut_cards"
+                  >
+                    <li
+                      class="card_our_services_long our_services__slider_main_woman_slide_haircut_cards_item"
+                    >
+                      <div class="card_our_services_long_bg">
+                        <img
+                          class="card_our_services_long_bg_img"
+                          src="./public/assets/png/our_services/woman/haircut/our_services__slider_main_woman_slide_haircut_1.png"
+                        />
+                      </div>
+                      <div class="card_our_services_long_content">
+                        <div class="card_our_services_long_content_title">
+                          Детская Стрижка Мальчик
+                        </div>
+                        <div class="card_our_services_long_content_desc">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Ab eum hic provident sapiente quae quisquam
+                          facilis?
+                        </div>
+                        <ul class="card_our_services_long_content_info">
+                          <li class="card_our_services_long_content_info_item">
+                            <div
+                              class="card_our_services_long_content_info_item_title"
+                            >
+                              Возраст:
+                            </div>
+                            <div
+                              class="card_our_services_long_content_info_item_value"
+                            >
+                              от 6 мес
+                            </div>
+                          </li>
+                          <li class="card_our_services_long_content_info_item">
+                            <div>Время:</div>
+                            <div
+                              class="card_our_services_long_content_info_item_value"
+                            >
+                              30 - 40 мин.
+                            </div>
+                          </li>
+                          <li class="card_our_services_long_content_info_item">
+                            <div
+                              class="card_our_services_long_content_info_item_title"
+                            >
+                              Пол:
+                            </div>
+                            <div
+                              class="card_our_services_long_content_info_item_value"
+                            >
+                              М
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="card_our_services_long_wrapper_price_and_btn">
+                        <div
+                          class="card_our_services_long_wrapper_price_and_btn_price"
+                        >
+                          <div
+                            class="card_our_services_long_wrapper_price_and_btn_price_title"
+                          >
+                            Цена от:
+                          </div>
+                          <div
+                            class="card_our_services_long_wrapper_price_and_btn_price_value"
+                          >
+                            700 <sub>р.</sub>
+                          </div>
+                        </div>
+                        <button
+                          class="button_main card_our_services_long_wrapper_price_and_btn_btn"
+                        >
+                          Заказать стрижку
+                        </button>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="our_services__slider_main_woman_slide_hairstyle">
+                  <div
+                    class="our_services__slider_main_slide_title our_services__slider_main_woman_slide_hairstyle_title"
+                  >
+                    Прически
+                  </div>
+                  <ul
+                    class="our_services__slider_main_slide_cards our_services__slider_main_woman_slide_hairstyle_cards"
+                  >
+                    <li
+                      class="card_our_services our_services__slider_main_woman_slide_hairstyle_card_item"
+                    >
+                      <div class="card_our_services_bg">
+                        <img
+                          class="card_our_services_bg_img"
+                          src="./public/assets/png/our_services/woman/hairstyle/our_services__slider_main_woman_slide_hairstyle_1.png"
+                        />
+                      </div>
+                      <div class="card_our_services_price">
+                        <div class="card_our_services_price_title">
+                          Цена от:
+                        </div>
+                        <div class="card_our_services_price_value">
+                          700 <sub>р.</sub>
+                        </div>
+                      </div>
+                      <div class="card_our_services_content">
+                        <div class="card_our_services_content_title">
+                          Детская Стрижка Мальчик
+                        </div>
+                        <div class="card_our_services_content_desc">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Ab eum hic provident sapiente quae quisquam
+                          facilis?
+                        </div>
+                        <ul class="card_our_services_content_info">
+                          <li class="card_our_services_content_info_item">
+                            <div
+                              class="card_our_services_content_info_item_title"
+                            >
+                              Возраст:
+                            </div>
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              от 6 мес
+                            </div>
+                          </li>
+                          <li class="card_our_services_content_info_item">
+                            Время:
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              30 - 40 мин.
+                            </div>
+                          </li>
+                          <li class="card_our_services_content_info_item">
+                            <div
+                              class="card_our_services_content_info_item_title"
+                            >
+                              Пол:
+                            </div>
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              М
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <button class="button_main card_our_services_btn">
+                        Заказать стрижку
+                      </button>
+                    </li>
+                    <li
+                      class="card_our_services our_services__slider_main_woman_slide_hairstyle_card_item"
+                    >
+                      <div class="card_our_services_bg">
+                        <img
+                          class="card_our_services_bg_img"
+                          src="./public/assets/png/our_services/woman/hairstyle/our_services__slider_main_woman_slide_hairstyle_2.png"
+                        />
+                      </div>
+                      <div class="card_our_services_price">
+                        <div class="card_our_services_price_title">
+                          Цена от:
+                        </div>
+                        <div class="card_our_services_price_value">
+                          700 <sub>р.</sub>
+                        </div>
+                      </div>
+                      <div class="card_our_services_content">
+                        <div class="card_our_services_content_title">
+                          Детская Стрижка Мальчик
+                        </div>
+                        <div class="card_our_services_content_desc">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Ab eum hic provident sapiente quae quisquam
+                          facilis?
+                        </div>
+                        <ul class="card_our_services_content_info">
+                          <li class="card_our_services_content_info_item">
+                            <div
+                              class="card_our_services_content_info_item_title"
+                            >
+                              Возраст:
+                            </div>
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              от 6 мес
+                            </div>
+                          </li>
+                          <li class="card_our_services_content_info_item">
+                            Время:
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              30 - 40 мин.
+                            </div>
+                          </li>
+                          <li class="card_our_services_content_info_item">
+                            <div
+                              class="card_our_services_content_info_item_title"
+                            >
+                              Пол:
+                            </div>
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              М
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <button class="button_main card_our_services_btn">
+                        Заказать стрижку
+                      </button>
+                    </li>
+                    <li
+                      class="card_our_services our_services__slider_main_woman_slide_hairstyle_card_item"
+                    >
+                      <div class="card_our_services_bg">
+                        <img
+                          class="card_our_services_bg_img"
+                          src="./public/assets/png/our_services/woman/hairstyle/our_services__slider_main_woman_slide_hairstyle_3.png"
+                        />
+                      </div>
+                      <div class="card_our_services_price">
+                        <div class="card_our_services_price_title">
+                          Цена от:
+                        </div>
+                        <div class="card_our_services_price_value">
+                          700 <sub>р.</sub>
+                        </div>
+                      </div>
+                      <div class="card_our_services_content">
+                        <div class="card_our_services_content_title">
+                          Детская Стрижка Мальчик
+                        </div>
+                        <div class="card_our_services_content_desc">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Ab eum hic provident sapiente quae quisquam
+                          facilis?
+                        </div>
+                        <ul class="card_our_services_content_info">
+                          <li class="card_our_services_content_info_item">
+                            <div
+                              class="card_our_services_content_info_item_title"
+                            >
+                              Возраст:
+                            </div>
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              от 6 мес
+                            </div>
+                          </li>
+                          <li class="card_our_services_content_info_item">
+                            Время:
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              30 - 40 мин.
+                            </div>
+                          </li>
+                          <li class="card_our_services_content_info_item">
+                            <div
+                              class="card_our_services_content_info_item_title"
+                            >
+                              Пол:
+                            </div>
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              М
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <button class="button_main card_our_services_btn">
+                        Заказать стрижку
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+                <div class="our_services__slider_main_woman_slide_braids">
+                  <div
+                    class="our_services__slider_main_slide_title our_services__slider_main_woman_slide_braids_title"
+                  >
+                    Афро-косы
+                  </div>
+                  <ul
+                    class="our_services__slider_main_slide_cards our_services__slider_main_woman_slide_braids_cards"
+                  >
+                    <li
+                      class="card_our_services our_services__slider_main_woman_slide_braids_card_item"
+                    >
+                      <div class="card_our_services_bg">
+                        <img
+                          class="card_our_services_bg_img"
+                          src="./public/assets/png/our_services/woman/braids/our_services__slider_main_woman_slide_braids_1.png"
+                        />
+                      </div>
+                      <div class="card_our_services_price">
+                        <div class="card_our_services_price_title">
+                          Цена от:
+                        </div>
+                        <div class="card_our_services_price_value">
+                          700 <sub>р.</sub>
+                        </div>
+                      </div>
+                      <div class="card_our_services_content">
+                        <div class="card_our_services_content_title">
+                          Детская Стрижка Мальчик
+                        </div>
+                        <div class="card_our_services_content_desc">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Ab eum hic provident sapiente quae quisquam
+                          facilis?
+                        </div>
+                        <ul class="card_our_services_content_info">
+                          <li class="card_our_services_content_info_item">
+                            <div
+                              class="card_our_services_content_info_item_title"
+                            >
+                              Возраст:
+                            </div>
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              от 6 мес
+                            </div>
+                          </li>
+                          <li class="card_our_services_content_info_item">
+                            Время:
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              30 - 40 мин.
+                            </div>
+                          </li>
+                          <li class="card_our_services_content_info_item">
+                            <div
+                              class="card_our_services_content_info_item_title"
+                            >
+                              Пол:
+                            </div>
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              М
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <button class="button_main card_our_services_btn">
+                        Заказать стрижку
+                      </button>
+                    </li>
+                    <li
+                      class="card_our_services our_services__slider_main_woman_slide_braids_card_item"
+                    >
+                      <div class="card_our_services_bg">
+                        <img
+                          class="card_our_services_bg_img"
+                          src="./public/assets/png/our_services/woman/braids/our_services__slider_main_woman_slide_braids_2.png"
+                        />
+                      </div>
+                      <div class="card_our_services_price">
+                        <div class="card_our_services_price_title">
+                          Цена от:
+                        </div>
+                        <div class="card_our_services_price_value">
+                          700 <sub>р.</sub>
+                        </div>
+                      </div>
+                      <div class="card_our_services_content">
+                        <div class="card_our_services_content_title">
+                          Детская Стрижка Мальчик
+                        </div>
+                        <div class="card_our_services_content_desc">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Ab eum hic provident sapiente quae quisquam
+                          facilis?
+                        </div>
+                        <ul class="card_our_services_content_info">
+                          <li class="card_our_services_content_info_item">
+                            <div
+                              class="card_our_services_content_info_item_title"
+                            >
+                              Возраст:
+                            </div>
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              от 6 мес
+                            </div>
+                          </li>
+                          <li class="card_our_services_content_info_item">
+                            Время:
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              30 - 40 мин.
+                            </div>
+                          </li>
+                          <li class="card_our_services_content_info_item">
+                            <div
+                              class="card_our_services_content_info_item_title"
+                            >
+                              Пол:
+                            </div>
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              М
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <button class="button_main card_our_services_btn">
+                        Заказать стрижку
+                      </button>
+                    </li>
+                    <li
+                      class="card_our_services our_services__slider_main_woman_slide_braids_card_item"
+                    >
+                      <div class="card_our_services_bg">
+                        <img
+                          class="card_our_services_bg_img"
+                          src="./public/assets/png/our_services/woman/braids/our_services__slider_main_woman_slide_braids_3.png"
+                        />
+                      </div>
+                      <div class="card_our_services_price">
+                        <div class="card_our_services_price_title">
+                          Цена от:
+                        </div>
+                        <div class="card_our_services_price_value">
+                          700 <sub>р.</sub>
+                        </div>
+                      </div>
+                      <div class="card_our_services_content">
+                        <div class="card_our_services_content_title">
+                          Детская Стрижка Мальчик
+                        </div>
+                        <div class="card_our_services_content_desc">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Ab eum hic provident sapiente quae quisquam
+                          facilis?
+                        </div>
+                        <ul class="card_our_services_content_info">
+                          <li class="card_our_services_content_info_item">
+                            <div
+                              class="card_our_services_content_info_item_title"
+                            >
+                              Возраст:
+                            </div>
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              от 6 мес
+                            </div>
+                          </li>
+                          <li class="card_our_services_content_info_item">
+                            Время:
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              30 - 40 мин.
+                            </div>
+                          </li>
+                          <li class="card_our_services_content_info_item">
+                            <div
+                              class="card_our_services_content_info_item_title"
+                            >
+                              Пол:
+                            </div>
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              М
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <button class="button_main card_our_services_btn">
+                        Заказать стрижку
+                      </button>
+                    </li>
+                    <li
+                      class="card_our_services our_services__slider_main_woman_slide_braids_card_item"
+                    >
+                      <div class="card_our_services_bg">
+                        <img
+                          class="card_our_services_bg_img"
+                          src="./public/assets/png/our_services/woman/braids/our_services__slider_main_woman_slide_braids_4.png"
+                        />
+                      </div>
+                      <div class="card_our_services_price">
+                        <div class="card_our_services_price_title">
+                          Цена от:
+                        </div>
+                        <div class="card_our_services_price_value">
+                          700 <sub>р.</sub>
+                        </div>
+                      </div>
+                      <div class="card_our_services_content">
+                        <div class="card_our_services_content_title">
+                          Детская Стрижка Мальчик
+                        </div>
+                        <div class="card_our_services_content_desc">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Ab eum hic provident sapiente quae quisquam
+                          facilis?
+                        </div>
+                        <ul class="card_our_services_content_info">
+                          <li class="card_our_services_content_info_item">
+                            <div
+                              class="card_our_services_content_info_item_title"
+                            >
+                              Возраст:
+                            </div>
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              от 6 мес
+                            </div>
+                          </li>
+                          <li class="card_our_services_content_info_item">
+                            Время:
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              30 - 40 мин.
+                            </div>
+                          </li>
+                          <li class="card_our_services_content_info_item">
+                            <div
+                              class="card_our_services_content_info_item_title"
+                            >
+                              Пол:
+                            </div>
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              М
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <button class="button_main card_our_services_btn">
+                        Заказать стрижку
+                      </button>
+                    </li>
+                    <li
+                      class="card_our_services our_services__slider_main_woman_slide_braids_card_item"
+                    >
+                      <div class="card_our_services_bg">
+                        <img
+                          class="card_our_services_bg_img"
+                          src="./public/assets/png/our_services/woman/braids/our_services__slider_main_woman_slide_braids_5.png"
+                        />
+                      </div>
+                      <div class="card_our_services_price">
+                        <div class="card_our_services_price_title">
+                          Цена от:
+                        </div>
+                        <div class="card_our_services_price_value">
+                          700 <sub>р.</sub>
+                        </div>
+                      </div>
+                      <div class="card_our_services_content">
+                        <div class="card_our_services_content_title">
+                          Детская Стрижка Мальчик
+                        </div>
+                        <div class="card_our_services_content_desc">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Ab eum hic provident sapiente quae quisquam
+                          facilis?
+                        </div>
+                        <ul class="card_our_services_content_info">
+                          <li class="card_our_services_content_info_item">
+                            <div
+                              class="card_our_services_content_info_item_title"
+                            >
+                              Возраст:
+                            </div>
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              от 6 мес
+                            </div>
+                          </li>
+                          <li class="card_our_services_content_info_item">
+                            Время:
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              30 - 40 мин.
+                            </div>
+                          </li>
+                          <li class="card_our_services_content_info_item">
+                            <div
+                              class="card_our_services_content_info_item_title"
+                            >
+                              Пол:
+                            </div>
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              М
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <button class="button_main card_our_services_btn">
+                        Заказать стрижку
+                      </button>
+                    </li>
+                    <li
+                      class="card_our_services our_services__slider_main_woman_slide_braids_card_item"
+                    >
+                      <div class="card_our_services_bg">
+                        <img
+                          class="card_our_services_bg_img"
+                          src="./public/assets/png/our_services/woman/braids/our_services__slider_main_woman_slide_braids_6.png"
+                        />
+                      </div>
+                      <div class="card_our_services_price">
+                        <div class="card_our_services_price_title">
+                          Цена от:
+                        </div>
+                        <div class="card_our_services_price_value">
+                          700 <sub>р.</sub>
+                        </div>
+                      </div>
+                      <div class="card_our_services_content">
+                        <div class="card_our_services_content_title">
+                          Детская Стрижка Мальчик
+                        </div>
+                        <div class="card_our_services_content_desc">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Ab eum hic provident sapiente quae quisquam
+                          facilis?
+                        </div>
+                        <ul class="card_our_services_content_info">
+                          <li class="card_our_services_content_info_item">
+                            <div
+                              class="card_our_services_content_info_item_title"
+                            >
+                              Возраст:
+                            </div>
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              от 6 мес
+                            </div>
+                          </li>
+                          <li class="card_our_services_content_info_item">
+                            <div>Время:</div>
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              30 - 40 мин.
+                            </div>
+                          </li>
+                          <li class="card_our_services_content_info_item">
+                            <div
+                              class="card_our_services_content_info_item_title"
+                            >
+                              Пол:
+                            </div>
+                            <div
+                              class="card_our_services_content_info_item_value"
+                            >
+                              М
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <button class="button_main card_our_services_btn">
+                        Заказать стрижку
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="our_action">
+      <img
+        class="our_action__cloud_top about_us__cloud_top"
+        src="./public/assets/png/our_action_cloud_top.png"
+      />
+
+      <div class="our_action__container_wrapper">
+        <div class="our_action__container container">
+          <div class="section_header our_action__section_header">
+            <p class="section_header__title our_action__section_header_title">
+              Акции
+            </p>
+            <img src="./public/assets/svg/scissors_pink.svg" alt="" />
+          </div>
+        </div>
+
+        <ul class="our_action__cards">
+          <li class="our_action__cards_item">
+            <div class="our_action__cards_item_bg">
+              <img
+                src="./public/assets/png/our_action/our_action_1.png"
+                alt=""
+                class="our_action__cards_item_bg_img"
+              />
+            </div>
+            <div class="our_action__cards_item_content">
+              <div class="our_action__cards_item_content_price">
+                <div class="our_action__cards_item_content_price_title">
+                  Цена:
+                </div>
+                <div class="our_action__cards_item_content_price_value">
+                  1600<sub>р.</sub>
+                </div>
+              </div>
+              <div class="our_action__cards_item_content_title">
+                Папа + Ребенок
+              </div>
+            </div>
+          </li>
+          <li class="our_action__cards_item">
+            <div class="our_action__cards_item_bg">
+              <img
+                src="./public/assets/png/our_action/our_action_2.png"
+                alt=""
+                class="our_action__cards_item_bg_img"
+              />
+            </div>
+            <div class="our_action__cards_item_content">
+              <div class="our_action__cards_item_content_price">
+                <div class="our_action__cards_item_content_price_title">
+                  Цена:
+                </div>
+                <div class="our_action__cards_item_content_price_value">
+                  2100<sub>р.</sub>
+                </div>
+              </div>
+              <div class="our_action__cards_item_content_title">
+                Мама + Ребенок
+              </div>
+            </div>
+          </li>
+          <li class="our_action__cards_item">
+            <div class="our_action__cards_item_bg">
+              <img
+                src="./public/assets/png/our_action/our_action_3.png"
+                alt=""
+                class="our_action__cards_item_bg_img"
+              />
+            </div>
+            <div class="our_action__cards_item_content">
+              <div class="our_action__cards_item_content_price">
+                <div class="our_action__cards_item_content_price_title">
+                  Цена:
+                </div>
+                <div class="our_action__cards_item_content_price_value">
+                  2400<sub>р.</sub>
+                </div>
+              </div>
+              <div class="our_action__cards_item_content_title">
+                Папа + 2 Ребенок
+              </div>
+            </div>
+          </li>
+          <li class="our_action__cards_item">
+            <div class="our_action__cards_item_bg">
+              <img
+                src="./public/assets/png/our_action/our_action_4.png"
+                alt=""
+                class="our_action__cards_item_bg_img"
+              />
+            </div>
+            <div class="our_action__cards_item_content">
+              <div class="our_action__cards_item_content_price">
+                <div class="our_action__cards_item_content_price_title">
+                  Цена:
+                </div>
+                <div class="our_action__cards_item_content_price_value">
+                  2900<sub>р.</sub>
+                </div>
+              </div>
+              <div class="our_action__cards_item_content_title">
+                Мама + 2 Ребенок
+              </div>
+            </div>
+          </li>
+          <li class="our_action__cards_item">
+            <div class="our_action__cards_item_bg">
+              <img
+                src="./public/assets/png/our_action/our_action_5.png"
+                alt=""
+                class="our_action__cards_item_bg_img"
+              />
+            </div>
+            <div class="our_action__cards_item_content">
+              <div class="our_action__cards_item_content_price">
+                <div class="our_action__cards_item_content_price_title">
+                  Цена:
+                </div>
+                <div class="our_action__cards_item_content_price_value">
+                  3000<sub>р.</sub>
+                </div>
+              </div>
+              <div class="our_action__cards_item_content_title">
+                Мама + Папа + Ребенок
+              </div>
+            </div>
+          </li>
+          <li class="our_action__cards_item">
+            <div class="our_action__cards_item_bg">
+              <img
+                src="./public/assets/png/our_action/our_action_6.png"
+                alt=""
+                class="our_action__cards_item_bg_img"
+              />
+            </div>
+            <div class="our_action__cards_item_content">
+              <div class="our_action__cards_item_content_price">
+                <div class="our_action__cards_item_content_price_title">
+                  Цена:
+                </div>
+                <div class="our_action__cards_item_content_price_value">
+                  3800<sub>р.</sub>
+                </div>
+              </div>
+              <div class="our_action__cards_item_content_title">
+                Мама + Папа + 2 Ребенок
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <img
+        class="our_action__cloud_buttom about_us__cloud_buttom"
+        src="./public/assets/png/our_action_cloud_bottom.png"
+      />
+    </section>
+
+    <section class="our_photos">
+      <div class="our_photos__container container">
+        <div class="section_header our_photos__section_header">
+          <p class="section_header__title our_photos__section_header_title">
+            Фото наших работ
+          </p>
+          <img src="./public/assets/svg/scissors_pink.svg" alt="" />
+        </div>
+
+        <div class="our_photos__slider_swiper swiper">
+          <div class="our_photos__slider_swiper_wrapper swiper-wrapper">
+            <ul class="our_photos__slider_swiper_slide swiper-slide">
+              <li class="our_photos__slider_swiper_slide_item">
+                <img
+                  class="our_photos__slider_swiper_slide_item_img"
+                  src="./public/assets/png/our_photos/slide_1/our_photos_1.png"
+                  alt=""
+                />
+              </li>
+              <li class="our_photos__slider_swiper_slide_item">
+                <img
+                  class="our_photos__slider_swiper_slide_item_img"
+                  src="./public/assets/png/our_photos/slide_1/our_photos_2.png"
+                  alt=""
+                />
+              </li>
+            </ul>
+            <ul class="our_photos__slider_swiper_slide swiper-slide">
+              <li class="our_photos__slider_swiper_slide_item">
+                <img
+                  class="our_photos__slider_swiper_slide_item_img"
+                  src="./public/assets/png/our_photos/slide_2/our_photos_1.png"
+                  alt=""
+                />
+              </li>
+              <li class="our_photos__slider_swiper_slide_item">
+                <img
+                  class="our_photos__slider_swiper_slide_item_img"
+                  src="./public/assets/png/our_photos/slide_2/our_photos_2.png"
+                  alt=""
+                />
+              </li>
+            </ul>
+            <ul class="our_photos__slider_swiper_slide swiper-slide">
+              <li class="our_photos__slider_swiper_slide_item">
+                <img
+                  class="our_photos__slider_swiper_slide_item_img"
+                  src="./public/assets/png/our_photos/slide_3/our_photos_1.png"
+                  alt=""
+                />
+              </li>
+              <li class="our_photos__slider_swiper_slide_item">
+                <img
+                  class="our_photos__slider_swiper_slide_item_img"
+                  src="./public/assets/png/our_photos/slide_3/our_photos_2.png"
+                  alt=""
+                />
+              </li>
+            </ul>
+            <ul class="our_photos__slider_swiper_slide swiper-slide">
+              <li class="our_photos__slider_swiper_slide_item">
+                <img
+                  class="our_photos__slider_swiper_slide_item_img"
+                  src="./public/assets/png/our_photos/slide_4/our_photos_1.png"
+                  alt=""
+                />
+              </li>
+              <li class="our_photos__slider_swiper_slide_item">
+                <img
+                  class="our_photos__slider_swiper_slide_item_img"
+                  src="./public/assets/png/our_photos/slide_4/our_photos_2.png"
+                  alt=""
+                />
+              </li>
+            </ul>
+            <ul class="our_photos__slider_swiper_slide swiper-slide">
+              <li class="our_photos__slider_swiper_slide_item">
+                <img
+                  class="our_photos__slider_swiper_slide_item_img"
+                  src="./public/assets/png/our_photos/slide_5/our_photos_1.png"
+                  alt=""
+                />
+              </li>
+              <li class="our_photos__slider_swiper_slide_item">
+                <img
+                  class="our_photos__slider_swiper_slide_item_img"
+                  src="./public/assets/png/our_photos/slide_5/our_photos_2.png"
+                  alt=""
+                />
+              </li>
+            </ul>
+            <ul class="our_photos__slider_swiper_slide swiper-slide">
+              <li class="our_photos__slider_swiper_slide_item">
+                <img
+                  class="our_photos__slider_swiper_slide_item_img"
+                  src="./public/assets/png/our_photos/slide_5/our_photos_1.png"
+                  alt=""
+                />
+              </li>
+              <li class="our_photos__slider_swiper_slide_item">
+                <img
+                  class="our_photos__slider_swiper_slide_item_img"
+                  src="./public/assets/png/our_photos/slide_5/our_photos_2.png"
+                  alt=""
+                />
+              </li>
+            </ul>
+          </div>
+          <div class="our_photos__slider_swiper_btns">
+            <img
+              class="our_photos__slider_swiper_btn_next"
+              src="./public/assets/svg/our_photos/arrow_right.svg"
+              alt=""
+            />
+            <img
+              class="our_photos__slider_swiper_btn_prev"
+              src="./public/assets/svg/our_photos/arrow_left.svg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="our_masters">
+      <div class="our_masters__wrapper">
+        <div class="our_masters__container container">
+          <div class="section_header our_masters__section_header">
+            <p class="section_header__title our_masters__section_header_title">
+              Наши мастера
+            </p>
+            <img src="./public/assets/svg/scissors_pink.svg" alt="" />
+          </div>
+
+          <ul class="our_masters__list">
+            <li class="our_masters__list_item">
+              <div class="our_masters__list_item_photos">
+                <img
+                  src="./public/assets/png/our_masters/masters/our_masters_1.png"
+                  alt=""
+                  class="our_masters__list_item_photos_img"
+                />
+              </div>
+              <div class="our_masters__list_item_title">Cкоро Появится</div>
+              <div class="our_masters__list_item_desc">
+                Текст-заполнитель — это текст, который имеет некоторые
+                характеристикиТекст-заполнитель — это текст, который имеет
+                некоторые характеристики
+              </div>
+              <button class="button_main our_masters__list_item_btn">
+                Записаться к мастеру
+              </button>
+            </li>
+            <li class="our_masters__list_item">
+              <div class="our_masters__list_item_photos">
+                <img
+                  src="./public/assets/png/our_masters/masters/our_masters_2.png"
+                  alt=""
+                  class="our_masters__list_item_photos_img"
+                />
+              </div>
+              <div class="our_masters__list_item_title">Cкоро Появится</div>
+              <div class="our_masters__list_item_desc">
+                Текст-заполнитель — это текст, который имеет некоторые
+                характеристикиТекст-заполнитель — это текст, который имеет
+                некоторые характеристики
+              </div>
+              <button class="button_main our_masters__list_item_btn">
+                Записаться к мастеру
+              </button>
+            </li>
+            <li class="our_masters__list_item">
+              <div class="our_masters__list_item_photos">
+                <img
+                  src="./public/assets/png/our_masters/masters/our_masters_3.png"
+                  alt=""
+                  class="our_masters__list_item_photos_img"
+                />
+              </div>
+              <div class="our_masters__list_item_title">Cкоро Появится</div>
+              <div class="our_masters__list_item_desc">
+                Текст-заполнитель — это текст, который имеет некоторые
+                характеристикиТекст-заполнитель — это текст, который имеет
+                некоторые характеристики
+              </div>
+              <button class="button_main our_masters__list_item_btn">
+                Записаться к мастеру
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <img
+        class="our_masters__cloud_bottom about_us__cloud_top"
+        src="./public/assets/png/our_masters/our_masters_cloud_bottom.png"
+      />
+    </section>
+
+    <footer class="footer">
+      <div class="footer__container ">
+        <div class="footer__map">
+          <div style="position: relative; overflow: hidden">
+            <a
+              href="https://yandex.ru/maps/org/afonka/160448031644/?utm_medium=mapframe&utm_source=maps"
+              style="color: #eee; font-size: 12px; position: absolute; top: 0px"
+              >Афонька</a
+            ><a
+              href="https://yandex.ru/maps/10750/ramenskoe/category/hairdresser/184105812/?utm_medium=mapframe&utm_source=maps"
+              style="
+                color: #eee;
+                font-size: 12px;
+                position: absolute;
+                top: 14px;
+              "
+              >Парикмахерская в Раменском</a
+            ><iframe
+              src="https://yandex.ru/map-widget/v1/?display-text=%D0%B0%D1%84%D0%BE%D0%BD%D1%8C%D0%BA%D0%B0&ll=38.203570%2C55.585037&mode=search&oid=160448031644&ol=biz&sll=38.203570%2C55.585037&source=serp_navig&sspn=0.014945%2C0.006836&text=%D0%B0%D1%84%D0%BE%D0%BD%D1%8C%D0%BA%D0%B0&z=17"
+              width="1458"
+              height="452"
+              frameborder="1"
+              allowfullscreen="true"
+              style="position: relative; border-radius: 50px"
+            ></iframe>
+          </div>
+        </div>
+        <div class="footer__logo header__logo">
+          <img
+            src="public/assets/svg/logo.svg"
+            alt=""
+            class="header__logo_img"
+          />
+        </div>
+        <ul class="footer__social_list header__top_line_social_list">
+          <li class="header__top_line_social_list_item">
+            <a href="" class="header__top_line_social_list_item_link">
+              <img
+                src="./assets/svg/icon_vk.svg"
+                alt=""
+                class="header__top_line_social_list_item_link_img"
+              />
+            </a>
+          </li>
+          <li class="header__top_line_social_list_item">
+            <a href="" class="header__top_line_social_list_item_link">
+              <img
+                src="public/assets/svg/icon_youtube.svg"
+                alt=""
+                class="header__top_line_social_list_item_link_img"
+              />
+            </a>
+          </li>
+          <li class="header__top_line_social_list_item">
+            <a href="" class="header__top_line_social_list_item_link">
+              <img
+                src="public/assets/svg/icon_whatsapp.svg"
+                alt=""
+                class="header__top_line_social_list_item_link_img"
+              />
+            </a>
+          </li>
+        </ul>
+        <button class="footer__phone phone">
+          <img
+            src="./public/assets/svg/icon_phone.svg"
+            alt=""
+            class="phone__img"
+          />
+          <span>+7 (999) 870-12-95</span>
+        </button>
+        <div class="footer__adress">г.Раменское ул. Космонавтов 1в. 2эт</div>
+        <div class="footer__mail">support@афонька.рф</div>
+
+        <button class="footer__btn button_sign_up">
+          Заказать консультацию
+        </button>
+        <div class="footer__copyright">© Copyright 2024 Афонька</div>
+      </div>
+    </footer>
 
     <!-- Модальные окна/popup -->
     <div class="header__modal_menu" id="header_modal_menu">

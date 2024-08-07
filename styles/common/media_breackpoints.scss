@@ -22,14 +22,14 @@
   }
 }
 
-@mixin media_M() {
-  @media (max-width: $media-m) {
+@mixin media_M($param-media-m: $media-m) {
+  @media (max-width: $param-media-m) {
     @content;
   }
 }
 
-@mixin media_S() {
-  @media (max-width: $media-s) {
+@mixin media_S($param-media-s: $media-s) {
+  @media (max-width: $param-media-s) {
     @content;
   }
 }
@@ -40,14 +40,14 @@
   }
 }
 
-@mixin media_XXS() {
-  @media (max-width: $media-xxs) {
+@mixin media_XXS($param-media-xxs: $media-xxs) {
+  @media (max-width: $param-media-xxs) {
     @content;
   }
 }
 
-@mixin media_XXXS() {
-  @media (max-width: $media-xxxs) {
+@mixin media_XXXS($param-media-xxxs: $media-xxxs) {
+  @media (max-width: $param-media-xxxs) {
     @content;
   }
 }
@@ -56,8 +56,8 @@
     @content;
   }
 }
-@mixin media_XXXXXS() {
-  @media (max-width: $media-xxxxxs) {
+@mixin media_XXXXXS($param-media-xxxxxs: $media-xxxxxs) {
+  @media (max-width: $param-media-xxxxxs) {
     @content;
   }
 }
