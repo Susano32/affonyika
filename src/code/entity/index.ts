@@ -1,5 +1,5 @@
 export {
   createSliderMain,
-  createSliderThumbs,
   createSliderOurPhotos,
+  createSliderOurAction,
 } from "./swiper";

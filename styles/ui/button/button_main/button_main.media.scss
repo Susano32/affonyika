@@ -1,4 +1,18 @@
-@include media_M {
+@include media_L {
   .button_main {
+    width: 150px;
+  }
+}
+
+@include media_XS {
+  .button_main {
+    color: rgb(230, 61, 56);
+    background: none;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: center;
+    transition: all 0.2s linear;
   }
 }

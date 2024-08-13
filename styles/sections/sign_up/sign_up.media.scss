@@ -80,13 +80,13 @@
 
     &_button_sign_up {
       position: absolute;
-      top: 800px;
+      top: 880px;
       bottom: 10%;
       left: 50%;
       transform: translateX(-50%);
       order: 3;
       z-index: $z-index-sign-up-button-sign-up;
-      width: $width-icon-button_sign_up;
+      width: $width-icon-button_sign_up + 200px;
       height: $height-icon-button_sign_up;
     }
   }
@@ -102,7 +102,9 @@
 
     &_content {
       &_title {
-        margin-bottom: 5px;
+        margin-bottom: 10px;
+        font-size: 27px;
+        line-height: 27px;
       }
 
       &_text {
@@ -111,10 +113,10 @@
     }
 
     &_button_sign_up {
-      top: 700px;
-      width: $width-icon-button_sign_up-m;
+      top: 800px;
+      width: $width-icon-button_sign_up-m + 130px;
       height: $height-icon-button_sign_up-m;
-    }
+      }
   }
 }
 
@@ -127,15 +129,19 @@
         height: $media-xxxs + $height-sign-up-additionally-img;
       }
     }
+    
+    &_button_sign_up {
+      top: 700px;
+    }
 
     &_content {
       &_title {
-        font-size: 20px;
-        line-height: 20px;
+        font-size: 25px;
+        line-height: 25px;
       }
 
       &_text {
-        font-size: 20px;
+        font-size: 25px;
         margin-bottom: 25px;
       }
     }
@@ -150,7 +156,7 @@
     }
 
     &_button_sign_up {
-      top: 500px;
+      top: 565px;
     }
   }
 }
@@ -164,7 +170,8 @@
     }
 
     &_button_sign_up {
-      top: 400px;
+      top: 500px;
+      width: $width-icon-button_sign_up-m + 30px;
     }
   }
 }

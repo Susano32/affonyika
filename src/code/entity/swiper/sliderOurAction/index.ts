@@ -1,0 +1,1 @@
+export { createSliderOurAction } from "./sliderOurAction";

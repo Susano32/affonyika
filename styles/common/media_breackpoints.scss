@@ -56,6 +56,13 @@
     @content;
   }
 }
+
+@mixin media_XXXXS580() {
+  @media (max-width: $media-xxxxs580) {
+    @content;
+  }
+}
+
 @mixin media_XXXXXS($param-media-xxxxxs: $media-xxxxxs) {
   @media (max-width: $param-media-xxxxxs) {
     @content;

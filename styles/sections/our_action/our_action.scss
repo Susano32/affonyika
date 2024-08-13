@@ -20,9 +20,6 @@
     z-index: 100;
   }
 
-  &__container {
-  }
-
   &__section_header {
     margin-bottom: 80px;
 
@@ -37,6 +34,10 @@
     gap: 17px;
     justify-content: center;
     position: relative;
+
+    &_swiper_btns {
+      display: none;
+    }
 
     &::before,
     &::after {
@@ -73,8 +74,8 @@
 
         &::after {
           position: absolute;
-          content: url("../../../public/assets/svg/our_services/bg-sky.svg");
-          bottom: 0;
+          content: url("../../../public/assets/png/our_services/bg-sky.png");
+          bottom: -5px;
           left: 0;
         }
 

@@ -1,15 +1,21 @@
 .footer {
   position: relative;
-  top: -150px;
   text-align: center;
+  overflow: hidden;
+  top: -30px;
+
+  &__container {
+    padding: 0;
+    overflow: hidden;
+  }
 
   &__map {
-    width: 1458px;
     height: 452px;
+    border-radius: 50px;
     margin: 0 auto;
     margin-bottom: 50px;
-    border-radius: 50px;
   }
+
   &__logo {
     margin-bottom: 35px;
   }

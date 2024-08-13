@@ -1,0 +1,29 @@
+@include media_XS() {
+  .our_photos {
+    margin-top: -4px;
+    padding-bottom: 0px;
+
+    &__section_header {
+      margin-bottom: 5px;
+    }
+    &__slider {
+      &_swiper {
+        &.swiper {
+          padding: 0px;
+        }
+      }
+    }
+  }
+}
+
+@include media_XXS() {
+  .our_photos {
+    margin-top: -15px;
+  }
+}
+
+@include media_XXXXS() {
+  .our_photos {
+    margin-top: -5px;
+  }
+}
