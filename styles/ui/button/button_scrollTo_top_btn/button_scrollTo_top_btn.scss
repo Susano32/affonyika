@@ -1,0 +1,14 @@
+.scrollToTopBtn {
+  display: none; /* Скрываем кнопку по умолчанию */
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  color: rgb(131, 2, 124);
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  font-size: 5rem;
+}

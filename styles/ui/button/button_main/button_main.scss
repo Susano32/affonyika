@@ -1,6 +1,9 @@
 .button_main {
-  width: 216px;
-  height: 52px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 40px;
   padding: 0.2rem 0.9rem;
   border-radius: 4% 95% 6% 95% / 95% 4% 92% 5%;
   border: 0.2rem dashed rgb(230, 61, 56);
@@ -18,6 +21,5 @@
   &:hover {
     border: 0.2rem solid rgb(230, 61, 56);
     border-radius: 95% 4% 97% 5% / 4% 94% 3% 95%;
-    font-size: 19px;
   }
 }

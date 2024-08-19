@@ -77,10 +77,10 @@
     &_desc {
       font-size: 15px;
       font-weight: 400;
-      line-height: 26px;
+      line-height: 24px;
       letter-spacing: 0%;
-      margin-bottom: 25px;
-      max-width: 315px;
+      margin-bottom: 24px;
+      max-width: 350px;
     }
 
     &_info {
@@ -111,7 +111,7 @@
   &_btn {
     margin-bottom: 40px;
   }
-
+  
   &_long {
     display: flex;
     grid-column: 1 / -1;

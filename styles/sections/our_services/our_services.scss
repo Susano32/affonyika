@@ -20,7 +20,8 @@
       background-color: #fff;
       border-radius: var(--borderRadius);
       padding-bottom: var(--borderRadius);
-      height: 675px;
+      min-height: 675px;
+      height: 100%;
       opacity: 0.5;
       width: var(--width);
       box-shadow: 0 3px 7px 0 rgba(0, 0, 0, 0.13),
@@ -34,6 +35,10 @@
       }
 
       &_card {
+        &_btn {
+          margin-top: auto;
+        }
+
         &_bg {
           width: var(--width);
           height: 300px;

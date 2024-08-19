@@ -21,7 +21,6 @@ document.addEventListener("DOMContentLoaded", async () => {
   });
 
   headerModalMenu?.addEventListener("click", (event: MouseEvent) => {
-    event.preventDefault();
 
     const currentElemment = event.target as HTMLAnchorElement;
     const listItem = currentElemment.closest(
@@ -249,4 +248,37 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Добавление обработчика события resize для отслеживания изменений размера окна
   window.addEventListener("resize", resizeScreen);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  // Получаем кнопку
+  const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+  if (!scrollToTopBtn) return;
+
+  // Показываем кнопку при прокрутке вниз
+  window.onscroll = function () {
+    scrollFunction();
+  };
+
+  function scrollFunction() {
+    if (!scrollToTopBtn) return;
+
+    if (
+      document.body.scrollTop > 300 ||
+      document.documentElement.scrollTop > 300
+    ) {
+      scrollToTopBtn.style.display = "block";
+    } else {
+      scrollToTopBtn.style.display = "none";
+    }
+  }
+
+  // Прокручиваем вверх при нажатии на кнопку
+  scrollToTopBtn.addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth", // Плавная прокрутка
+    });
+  });
 });

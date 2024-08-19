@@ -53,13 +53,13 @@
       grid-row: auto;
       order: 2;
       z-index: $z-index-sign-up-photo;
+      padding: 60px;
 
       &_img {
         transform: none;
-        height: $media-xs + $height-sign-up-additionally-img;
+        height: 100%;
         width: 100%;
         box-shadow: none;
-        border-radius: 10px;
       }
     }
 
@@ -74,13 +74,12 @@
 
       &_text {
         font-size: 25px;
-        margin-bottom: 40px;
       }
     }
 
     &_button_sign_up {
       position: absolute;
-      top: 880px;
+      top: 850px;
       bottom: 10%;
       left: 50%;
       transform: translateX(-50%);
@@ -94,29 +93,19 @@
 
 @include media_XXS {
   .sign_up {
-    &_photo {
-      &_img {
-        height: $media-xxs + $height-sign-up-additionally-img;
-      }
-    }
-
     &_content {
       &_title {
         margin-bottom: 10px;
         font-size: 27px;
         line-height: 27px;
       }
-
-      &_text {
-        margin-bottom: 30px;
-      }
     }
 
     &_button_sign_up {
-      top: 800px;
+      top: 750px;
       width: $width-icon-button_sign_up-m + 130px;
       height: $height-icon-button_sign_up-m;
-      }
+    }
   }
 }
 
@@ -124,14 +113,9 @@
   .sign_up {
     margin-bottom: -7rem;
 
-    &_photo {
-      &_img {
-        height: $media-xxxs + $height-sign-up-additionally-img;
-      }
-    }
-    
     &_button_sign_up {
       top: 700px;
+      width: $width-icon-button_sign_up-m + 30px;
     }
 
     &_content {
@@ -142,35 +126,31 @@
 
       &_text {
         font-size: 25px;
-        margin-bottom: 25px;
       }
     }
   }
 }
+
+@include media_XXXXS580 {
+  .sign_up {
+    &_button_sign_up {
+      top: 500px;
+    }
+  }
+}
+
 @include media_XXXXS {
   .sign_up {
-    &_photo {
-      &_img {
-        height: $media-xxxxs + $height-sign-up-additionally-img;
-      }
-    }
-
     &_button_sign_up {
-      top: 565px;
+      top: 450px;
     }
   }
 }
 
 @include media_XXXXXS {
   .sign_up {
-    &_photo {
-      &_img {
-        height: $media-xxxxxs + $height-sign-up-additionally-img;
-      }
-    }
-
     &_button_sign_up {
-      top: 500px;
+      top: 400px;
       width: $width-icon-button_sign_up-m + 30px;
     }
   }
